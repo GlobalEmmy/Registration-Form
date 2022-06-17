@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./assets/bg-intro-desktop.png), hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-weight: 700;
+}
+
+.flex__container {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.container__text {
+  color: #fff;
+  line-height: 1.5;
+  border: 1px soid black;
+}
+
+.form {
+  background: #fff;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 40px;
+  width: 100%;
+}
+.order__class {
+  background: hsl(248, 32%, 59%);
+  color: red;
+}
+.claim__button {
+  background: hsl(154, 59%, 51%);
+  color: #fff;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.form input,
+.claim__button {
+  margin: 10px;
+  padding: 15px 50px;
+  border-radius: 5px;
+  width: 70%;
+  transition: 400ms ease;
+  border: 1px solid grey;
+}
+.claim__button:hover {
+  background: hsl(0, 100%, 74%);
+  color: #fff;
+  border: transparent;
+}
+.form__footer {
+  text-align: center;
+  color: blak;
+  /* width: 100%; */
+}
+.form__footer__span {
+  color: red;
+}
+@media screen and (max-width:1440px) {
+    .flex__container {
+        max-width: fit-content;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .flex__container {
+        max-width: fit-content;
+        background: url(./assets/bg-intro-mobile.png);
+    }
+}
