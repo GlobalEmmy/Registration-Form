@@ -35,8 +35,11 @@ h1 {
 }
 .order__class {
   background: hsl(248, 32%, 59%);
-  color: red;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
 }
+
 .claim__button {
   background: hsl(154, 59%, 51%);
   color: #fff;
@@ -52,6 +55,9 @@ h1 {
   transition: 400ms ease;
   border: 1px solid grey;
 }
+.claim__button {
+  padding-left: 20px;
+}
 .claim__button:hover {
   background: hsl(0, 100%, 74%);
   color: #fff;
@@ -59,21 +65,27 @@ h1 {
 }
 .form__footer {
   text-align: center;
-  color: blak;
-  /* width: 100%; */
+  color: black;
 }
 .form__footer__span {
   color: red;
 }
+
 @media screen and (max-width:1440px) {
-    .flex__container {
-        max-width: fit-content;
+  .flex__container {
+      display: flex;
+    }
+    .container__form {
+      display: grid;
+      grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width:375px) {
-    .flex__container {
-        max-width: fit-content;
-        background: url(./assets/bg-intro-mobile.png);
-    }
+  .flex__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+  
 }
