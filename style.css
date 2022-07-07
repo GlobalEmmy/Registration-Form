@@ -40,14 +40,26 @@ h1 {
   text-align: center;
 }
 
-.claim__button {
+/* .claim__button {
   background: hsl(154, 59%, 51%);
   color: #fff;
   cursor: pointer;
   transition: all 400ms ease;
-}
-.form input,
+} */
+
 .claim__button {
+  background: hsl(154, 59%, 51%);
+  margin: 10px;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 5px;
+  width: 70%;
+  transition: 400ms ease;
+  border: 1px solid grey;
+  text-align: center;
+  cursor: pointer;
+}
+.form input {
   margin: 10px;
   padding: 15px 50px;
   border-radius: 5px;
